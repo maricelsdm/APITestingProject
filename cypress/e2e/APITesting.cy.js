@@ -15,6 +15,7 @@ describe('API Testing',()=>{
             expect({promotions: {name: 'Features'}}).to.have.nested.property('promotions.name');
                 }).and((response)=>{
                 expect({promotions: {description: 'Better position in category'}}).to.have.nested.property('promotions.description');
+                
              });
       });
 });
